@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+
+.watch {
+  width: 400px;
+  height: 400px;
+  background: url("http://draw.asmer.fe.a-level.com.ua/ClockFace/ClockFace.png")
+    center no-repeat;
+  border: 1px black solid;
+  margin: 60px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.line {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 60px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hour-line {
+  z-index: 1;
+  transform: rotate(30deg);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.minute-line {
+  z-index: 2;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.second-line {
+  transform: rotate(120deg);
+  z-index: 3;
 }
